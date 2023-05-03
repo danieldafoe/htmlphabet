@@ -1,0 +1,23 @@
+.ElementList h2 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-block-start: 10rem;
+}
+
+.ElementList nav {
+  font-family: var(--type-display-name);
+  font-weight: var(--type-display-weight);
+  margin-inline: 0;
+  text-align: left;
+}
+
+.ElementList a {
+  color: var(--clr-brand-white);
+  font-size: 4.8rem;
+  text-decoration: none;
+  transform: none;
+}
+
+.ElementList nav li {
+  display: block;
+}

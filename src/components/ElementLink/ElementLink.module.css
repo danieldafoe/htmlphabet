@@ -1,0 +1,36 @@
+.ElementLink {
+  color: var(--clr-brand-white);
+  display: block;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  padding: 0 .54rem;
+  text-decoration: none;
+  transform: rotate(10deg);
+  transition: color 200ms ease, transform 150ms ease;
+}
+
+.ElementLink:focus,
+.ElementLink:hover {
+  color: var(--clr-brand-dark);
+  transform: rotate(0);
+}
+
+.ElementLink > span {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media(prefers-reduced-motion: reduce) {
+  .ElementLink:focus,
+  .ElementLink:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,88 @@
+:root {
+  --clr-brand-light: #01BAEF;
+  --clr-brand-dark: #0B4F6C;
+  --clr-brand-white: #fff;
+
+  --clr-bg-gradient-top: var(--clr-brand-dark);
+  --clr-bg-gradient-bottom: var(--clr-brand-light);
+
+  --type-base: 2em;
+  --type-base-clr: var(--clr-brand-white);
+
+  --type-base-name: Lato, sans-serif;
+  --type-base-weight: 400;
+
+  --type-display-name: 'Luckiest Guy', sans-serif;
+  --type-display-weight: 400;
+
+  --cmp-code-snippet-bg-clr: #0B4F6C;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--clr-bg-gradient-top),
+    var(--clr-bg-gradient-bottom)
+  );
+  color: var(--type-base-clr);
+  font-family: var(--type-base-name);
+  font-size: var(--type-base);
+  line-height: 1.42;
+  padding-bottom: 10rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav a {
+  color: var(--clr-brand-white);
+  display: block;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  padding: 0 .54rem;
+  text-decoration: none;
+  transform: rotate(10deg);
+  transition: color 200ms ease, transform 150ms ease;
+}
+
+nav a:focus,
+nav a:hover {
+  color: var(--clr-brand-dark);
+  transform: rotate(0);
+}
+
+nav a > span {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media(prefers-reduced-motion: reduce) {
+  nav a:focus,
+  nav a:hover {
+    transform: none;
+  }
+}

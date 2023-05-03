@@ -7,37 +7,12 @@
   max-width: 80%;
   padding: 3rem 8rem;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 header {
   display: flex;
   flex-direction: column;
-}
-
-nav {
-  margin: 4rem auto;
-  max-width: 80%;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li + li {
-  margin-left: 1rem;
-}
-
-main > p {
-  font-weight: 400;
-  margin: 8rem auto 0;
-  max-width: 80%;
-  text-align: center;
 }
 
 .logo {

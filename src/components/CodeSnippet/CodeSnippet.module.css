@@ -1,0 +1,13 @@
+.CodeSnippet {
+  background-color: var(--cmp-code-snippet-bg-clr);
+  border-radius: 12px;
+  color: var(--brand-white);
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 600px;
+  overflow-x: scroll;
+  padding: 4rem;
+  width: 100%;
+}
+
+
