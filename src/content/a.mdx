@@ -1,0 +1,45 @@
+import CodeSnippet from "../components/CodeSnippet/CodeSnippet.js";
+import bus from '../images/bus.svg';
+
+# &lt;a&gt;, the anchor tag
+
+<img src={bus} alt='' />
+
+Anchor tags are like buses: they take you somewhere.
+
+Similar to how buses can't take actions like buying a lottery ticket or submitting taxes, [anchors don't take actions](https://davidwalsh.name/html5-buttons).
+
+Buses sometimes have digital signs or numbers on them that tell you where they're going; anchors have an `href` attribute for that.
+
+Buses only let you ride if you have a ticket; anchors need an `href` to work.
+
+## Naming your destination
+
+The digital sign on a bus tells you where it's going. We need to tell people where anchor tags take you as well.
+
+Your destination name should be descriptive while being as short as possible.
+
+Buses don't say "Driving to the daycare," they say "Daycare".
+
+<h2 id='html-spec-nav-code-sample'>HTML Specification Code Example</h2>
+
+The [anchor tag HTML specification](https://html.spec.whatwg.org/dev/text-level-semantics.html#the-a-element) provides the following example for an anchor, noting that you could "surround even whole advertisements" in one.
+
+<CodeSnippet labelId='html-spec-nav-code-sample'>
+{`
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news">News</a></li>
+    <li><a>Examples</a></li>
+    <li><a href="/legal">Legal</a</li>
+  </ul>
+</nav>
+`}
+</CodeSnippet>
+
+What do screen readers think of this? They treat anchors without a destination as plain text.
+
+## Try it!
+
+

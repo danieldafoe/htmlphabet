@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     loader: ElementListLoader
   },
   {
-    path: 'element/:elementName', // element/abbr
+    path: 'element/:elementName',
     element: <Element/>,
     loader: ElementLoader
   },

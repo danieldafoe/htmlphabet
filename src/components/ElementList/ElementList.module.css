@@ -12,12 +12,19 @@
 }
 
 .ElementList a {
-  color: var(--clr-brand-white);
+  display: inline-block;
+  color: var(--clr-link);
   font-size: 4.8rem;
   text-decoration: none;
   transform: none;
 }
 
+.ElementList a[disabled] {
+  color: var(--clr-link-disabled);
+  cursor: not-allowed;
+}
+
 .ElementList nav li {
   display: block;
+  line-height: 1.2;
 }

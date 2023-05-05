@@ -11,7 +11,15 @@
   font-family: var(--type-display-name);
   font-weight: var(--type-display-weight);
   line-height: 1.1;
-  margin: 4.8rem 0 2rem;
+  margin: 4.8rem 0 2.8rem;
+}
+
+.Element h2,
+.Element h3,
+.Element h4,
+.Element h5 {
+  letter-spacing: .25rem;
+  margin-block-start: 5.4rem;
 }
 
 .Element h1 {
@@ -23,6 +31,39 @@
   margin-block-end: 1.8rem;
 }
 
+.Element h3 {
+  margin-block-end: 1rem;
+}
+
 .Element p {
-  margin: .54rem 0 2em;
+  margin: .48rem 0 1em;
+}
+
+.Element a {
+  border-bottom: 2px solid var(--clr-brand-white);
+  color: var(--clr-brand-white);
+  padding-bottom: .1em;
+  text-decoration: none;
+  transition: background-color 200ms ease,
+              color 150ms ease;
+}
+
+.Element a:focus,
+.Element a:hover {
+  background-color: var(--clr-brand-white);
+  color: var(--clr-brand-light);
+}
+
+.Element p code {
+  background-color: var(--clr-brand-dark);
+  border-radius: 4px;
+  font-size: 2.2rem;
+  padding: .16rem .36rem;
+}
+
+.Element img {
+  float: right;
+  padding: 4rem 0 2rem 2rem;
+  shape-outside: circle(100%);
+  width: 400px;
 }

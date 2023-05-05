@@ -13,7 +13,7 @@ function Element() {
   const ElementToRender = Elements[tagName];
 
   return (
-    <MainLayout>
+    <MainLayout image={tagName}>
       <article className={styles.Element}>
         <ElementToRender></ElementToRender>
       </article>

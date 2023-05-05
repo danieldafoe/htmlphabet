@@ -9,20 +9,23 @@ export async function loader({ params }) {
   letter = params.elementId;
 
   const elementsByLetter = ALL_ELEMENTS.filter(
-    element => element[0] === params.elementId
+    element => element.tag[0] === params.elementId
   );
-  return { elementsByLetter };
+
+  return elementsByLetter;
 }
+
+const generateUrl = (tag, isDisabled) => isDisabled ? '' : `/element/${tag}`;
 
 function ElementList() {
   let matchingElements;
-  const { elementsByLetter } = useLoaderData();
+  const elementsByLetter = useLoaderData();
 
   if (elementsByLetter.length > 0) {
     matchingElements = elementsByLetter.map((element) => (
-      <li key={element}>
-        <Link to={`/element/${element}`}>
-          &lt;{element}&gt;
+      <li key={element.tag}>
+        <Link to={generateUrl(element.tag, element.disabled)} disabled={element.disabled}>
+          &lt;{element.tag}&gt;
         </Link>
       </li>
     ));

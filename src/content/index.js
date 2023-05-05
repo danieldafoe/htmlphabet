@@ -1,7 +1,7 @@
+import Anchor from './a.mdx';
 import Abbr from './abbr.mdx';
-import Address from './address.mdx';
 
 export {
-  Abbr as abbr,
-  Address as address
+  Anchor as a,
+  Abbr as abbr
 };

@@ -1,10 +1,13 @@
 :root {
-  --clr-brand-light: #01BAEF;
+  --clr-brand-light: #019FCB;
   --clr-brand-dark: #0B4F6C;
   --clr-brand-white: #fff;
 
   --clr-bg-gradient-top: var(--clr-brand-dark);
   --clr-bg-gradient-bottom: var(--clr-brand-light);
+
+  --clr-link: var(--clr-brand-white);
+  --clr-link-disabled: #ffffff40;
 
   --type-base: 2em;
   --type-base-clr: var(--clr-brand-white);
@@ -46,8 +49,19 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+pre > code {
+  background-color: var(--cmp-code-snippet-bg-clr);
+  border-radius: 12px;
+  color: var(--brand-white);
+  display: block;
+  font-size: 2rem;
+  max-width: 600px;
+  overflow-x: scroll;
+  padding: 3.6rem;
+  width: 100%;
 }
 
 nav a {

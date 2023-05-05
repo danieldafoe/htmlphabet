@@ -1,13 +1,49 @@
 import CodeSnippet from "../components/CodeSnippet/CodeSnippet.js";
 
-# &lt;abbr&gt;
+# &lt;abbr&gt;, <br/>the abbreviation element
 
-Ex sunt labore officia sunt in veniam id sunt magna. Ullamco cupidatat fugiat ipsum id eu eiusmod excepteur dolore ea reprehenderit cupidatat. Non irure do deserunt et ipsum labore incididunt nostrud ea. Reprehenderit nostrud deserunt quis quis Lorem pariatur incididunt velit aliqua.
+You may be tempted to use `<abbr>` for indicating that something is an abbreviation, and I'm happy you are. That's a wonderful thought: not everyone will know what the long form of an abbreviation is.
 
-## Example
+## The inclusivity problem
+
+By default, the `<abbr>` element appears like regular text, but with a dotted underline. This means some people get the benefit of seeing a signifier that perhaps there's something more to this piece of text.
+
+If you hover with a pointing device on the text for a moment, a tooltip appears to indicate the abbreviated word's full form. This is set using the `title` attribute.
 
 <CodeSnippet>
-  &lt;abbr title="Accessibility"&gt;
-    a11y
-  &lt;/abbr&gt;
+{`<abbr title='information'>
+  info
+</abbr>`}
 </CodeSnippet>
+
+
+Unfortunately, the `<abbr>` element isn't helpful for everyone. People using screen readers have no
+
+## What to use instead
+
+Better content writing. Expand the abbreviation.
+
+<div className='comparison'>
+  ### Before
+
+  <CodeSnippet>
+{`<p>
+  <abbr title='International Organisation for Standardization'>
+    OSI
+  </abbr>
+</p>`}
+  </CodeSnippet>
+
+  ### After
+  <CodeSnippet>
+{`<p>
+  International Organisation for Standardization (OSI)
+</p>`}
+  </CodeSnippet>
+</div>
+
+
+
+
+
+
